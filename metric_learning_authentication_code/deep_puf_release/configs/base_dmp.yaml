@@ -1,0 +1,29 @@
+extends: configs/base.yaml
+
+name: base_dmp
+tag: "scratch"
+exp_root_dir: "outputs"
+seed: 0
+
+data_cls: dmp.data.dmp_data.PUFDataModule
+data:
+  scene_list: ./dataset/ideal_data # the path to the scene list
+  eval_scene_list: ./dataset/ideal_data # the path to the test scene list
+  quantize_number: 9
+  min_number: -3
+  max_number: 5
+
+  repeat: 100
+  batch_size: 32
+  num_workers: 32
+
+system_cls: dmp.systems.dmp_base.DeepMetricSystem
+system:
+  loss_cls: dmp.systems.losses.FocalCrossEntropyLoss
+  loss:
+    gamma: 0.9
+
+  backbone_cls: dmp.models.archs.BaseNet.DMPNet
+  backbone:
+    in_channel: 10 # the number of images
+    image_resolution: 32

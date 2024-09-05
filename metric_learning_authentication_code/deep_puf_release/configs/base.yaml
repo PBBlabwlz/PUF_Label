@@ -1,0 +1,37 @@
+name: base
+tag: "base_yaml"
+exp_root_dir: "outputs"
+seed: 0
+
+system_cls: dmp.systems.dmp_base.DeepMetricSystem
+system:
+  use_ema: true
+  check_train_every_n_steps: 100
+  scheduler:
+    name: CosineAnnealingLR
+    interval: step
+    args:
+        T_max: ${trainer.max_steps}
+        eta_min: 0.0
+  optimizer:
+    name: AdamW
+    args:
+      lr: 1e-4
+      betas: [ 0.9, 0.95 ]
+      weight_decay: 0.05
+    
+trainer:
+  num_nodes: 1
+  max_steps: 10000
+  log_every_n_steps: 1
+  num_sanity_val_steps: 0
+  check_val_every_n_epoch: 200
+  enable_progress_bar: true
+  precision: bf16-mixed
+  gradient_clip_val: 1.0
+  strategy: auto
+
+checkpoint:
+  save_last: true # whether to save at each validation time
+  save_top_k: -1
+  every_n_train_steps: 2000
