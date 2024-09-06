@@ -1,4 +1,4 @@
-# Introductiom
+# Introduction
 This contains data and code for our article 'High-dimensional Anticounterfeiting Nanodiamonds Authenticated with Deep Metric Learning'
 
 Data: original readout images and digitized readout images of PUF labels acquired  in ideal lab condition and lab condition with additional noise sources.
