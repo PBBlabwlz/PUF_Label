@@ -19,12 +19,12 @@ Dataset is contained in following folders.
 # Encode and Similarity Index Authentication code
 MATLAB code runs in MATLAB R2023b.
 # 1) Encode Original Images
-`encode_images.m` in 'encoding code' folder: this file can process and encode the origianl readout images, and save the digitized images.
+`encode_images.m` in 'encoding code' folder: this file can process and encode the original readout images, and save the digitized images.
 
 `bandpass.m` in 'encoding code' folder: please put this file and `encode_images.m` in the same folder, when running `encode_images.m`.
 
 
-Please input following parameters in encode_images.m file before running:
+Please input following parameters in `encode_images.m` before running:
 
 ```bash
 num_label=300; % total number of PUF label, 300 means 300 PUF labels
