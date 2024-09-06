@@ -5,7 +5,7 @@ num_label=300;% total number of PUF labels
 index_folder=cell(1,2);
 index_folder{1}="_1\";
 index_folder{2}="_2\";
-file_name1='D:\LingzhiWang\PhD8\Experiment\PUF_label\Response\data_source\DataAndCode\ideal_digitized_images\';
+file_name1='';
 
 % parameters for digitized images and corresponding polarization angle
 angle_index=36:12:144; % the linear polarization direction corresponding to digitized images
