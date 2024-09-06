@@ -2,12 +2,12 @@
 % Parameters about No. (index) of PUF label
 num_label=150; % total number of PUF label
 index_data="_1"; % readout time of PUF label
-index_folder_save="_1\";
+index_folder_save="_1\"; % readout time of PUF label
 
 % set path for open images and save digitized images
-open_name1='';
+open_name1=''; % path of folder saving original readout results
 open_name3=index_data+'.tif';
-save_name1='';
+save_name1=''; % path of folder saving digitized readout results
 
 % Parameters for image process
 diameter=10; % bright spot size
