@@ -18,7 +18,7 @@ Dataset is contained in following folders.
 
 # Encode and Similarity Index Authentication code
 MATLAB code runs in MATLAB R2023b.
-# 1) Encode Original Images
+## 1) Encode Original Images
 `encode_images.m` in 'encoding code' folder: this file process and encode the original readout images, and save the digitized images.
 
 `bandpass.m` in 'encoding code' folder: please put this file and `encode_images.m` in the same folder, when running `encode_images.m`.
@@ -36,7 +36,7 @@ save_name1='D:\test\ideal_digitized_images\'; % path of folder saving digitized 
 
 Please remember to create folders with name shown in 'ideal_digitized_images' folder to save the digitized readout results.
 
-# 2) Authentication based on similarity index method
+## 2) Authentication based on similarity index method
 `similarity_index.m` in 'similarity_index_authentication_code' folder: this file authenticate the digitized images via similarity index method, and authentication result is saved in variable called sim_index.
 
 
