@@ -31,7 +31,7 @@ num_label=300; % total number of PUF label, 300 means 300 PUF labels
 index_data="_1"; % readout time of PUF label, 1 means the first time of readout results
 index_folder_save="_1\"; % readout time of PUF label, 1 means the first time of readout results
 open_name1='D:\test\ideal_data\'; % path of folder saving original readout results
-save_name1='D:\test\ideal_digitized_images'; % path of folder saving digitized readout results
+save_name1='D:\test\ideal_digitized_images\'; % path of folder saving digitized readout results
 ```
 
 Please remember to create folders with name shown in 'ideal_digitized_images' folder to save the digitized readout results.
