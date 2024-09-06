@@ -5,22 +5,28 @@ Code: process and encode original readout images, authentication based on simila
 
 # Dataset
 Dataset is contained in following folders.
-ideal_data: two times of readout results of 300 PUF labels acquired in ideal lab condition
-noise_data: two times of readout results of 150 PUF labels acquired in lab condition with additional noise source
-ideal_digitized_images: digitized images corresponding to the readout results of 300 PUF labels acquired in ideal lab condition
-noise_digitized_images: digitized images corresponding to the readout results of 150 PUF labels acquired in lab condition with additional noise source
+`ideal_data`: two times of readout results of 300 PUF labels acquired in ideal lab condition
+`noise_data`: two times of readout results of 150 PUF labels acquired in lab condition with additional noise source
+`ideal_digitized_images`: digitized images corresponding to the readout results of 300 PUF labels acquired in ideal lab condition
+`noise_digitized_images`: digitized images corresponding to the readout results of 150 PUF labels acquired in lab condition with additional noise source
 
 # Encode and Similarity Index Authentication code
 MATLAB code runs in MATLAB R2023b.
 # 1) Encode Original Images
-encode_images.m file in 'encoding code' folder: this file can process and encode the origianl readout images, and save the digitized images.
-bandpass.m file in 'encoding code' folder: please put this file and encode_images.m in the same folder, when running encode_images.m.
+`encode_images.m` in 'encoding code' folder: this file can process and encode the origianl readout images, and save the digitized images.
+
+`bandpass.m` in 'encoding code' folder: please put this file and encode_images.m in the same folder, when running encode_images.m.
 
 Please input following parameters in encode_images.m file before running:
+
 num_label=300; % total number of PUF label, 300 means 300 PUF labels
+
 index_data="_1"; % readout time of PUF label, 1 means the first time of readout results
+
 index_folder_save="_1\"; % readout time of PUF label, 1 means the first time of readout results
+
 open_name1='D:\test\ideal_data\'; % path of folder saving original readout results
+
 save_name1='D:\test\ideal_digitized_images'; % path of folder saving digitized readout results
 
 Please remember to create folders with name shown in 'ideal_digitized_images' folder to save the digitized readout results.
