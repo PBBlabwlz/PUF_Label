@@ -3,7 +3,7 @@ This contains data and code for our article 'High-dimensional Anticounterfeiting
 
 Data: original readout images and digitized readout images of PUF labels acquired  in ideal lab condition and lab condition with additional noise sources.
 
-Code: process and encode original readout images, authentication based on similarity index method, and XXX.
+Code: process and encode original readout images, authentication based on similarity index method, and authentication based on metric-learning method.
 
 # Dataset
 Dataset is contained in following folders.
